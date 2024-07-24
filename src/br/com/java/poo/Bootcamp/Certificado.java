@@ -9,6 +9,7 @@ public class Certificado {
     private String nomeDoAluno;
     private int aproveitamento;
     private Set<Conteudo> materiasConcluidas;
+    private LocalDate termino = LocalDate.now();
 
 
     public Certificado() {
@@ -17,11 +18,11 @@ public class Certificado {
 
     @Override
     public String toString() {
-
         return "Certificado{" +
                 "nomeDoAluno='" + nomeDoAluno + '\'' +
                 ", aproveitamento=" + aproveitamento +
                 ", materiasConcluidas=" + materiasConcluidas +
+                ", termino=" + termino +
                 '}';
     }
 
@@ -49,5 +50,11 @@ public class Certificado {
         this.materiasConcluidas = materiasConcluidas;
     }
 
+    public LocalDate getTermino() {
+        return termino;
+    }
 
+    public void setTermino(LocalDate termino) {
+        this.termino = termino;
+    }
 }

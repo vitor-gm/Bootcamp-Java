@@ -56,6 +56,8 @@ public class Dev {
         for(Conteudo c : getConteudosConcluidos()) {
             System.out.println("- " + c.getTitulo());
         }
+        System.out.println("Xp Total: " + calcularTotalXp());
+        System.out.println("Conclusão: " + this.certificado.getTermino());
         System.out.println("=============================");
         System.out.println(" ");
     }
